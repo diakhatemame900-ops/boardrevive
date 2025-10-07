@@ -1,0 +1,290 @@
+:root {
+    --bg-primary: #f5f5f9;
+    --bg-secondary: #fff;
+    --text-color-primary: #222;
+    --text-color-secondary: #666;
+    --border-color: #ddd;
+    --header-color: #fff;
+    --footer-bg: #2d1a58;
+}
+
+/* -------------------------------------- */
+/* Mode Sombre (Dark Mode) */
+/* -------------------------------------- */
+body.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-color-primary: #f5f5f9;
+    --text-color-secondary: #bbb;
+    --border-color: #333;
+    --header-color: #fff;
+    --footer-bg: #2d1a58; /* Garder sombre pour la marque */
+}
+
+/* Appliquer les variables */
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+  margin: 0;
+  background: var(--bg-primary);
+  color: var(--text-color-primary);
+  text-align: center;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  /* Couleurs du logo : #63d4f5 (bleu clair) et #ff6a1c (orange) */
+  background: linear-gradient(135deg, #63d4f5, #ff6a1c);
+  color: var(--header-color);
+  padding: 25px 10px;
+  position: relative; /* Pour positionner le bouton de bascule */
+}
+
+/* Bouton de bascule de thème */
+#themeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    transition: background 0.2s;
+}
+#themeToggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: none;
+}
+
+/* Style du nouveau logo image */
+.logo-img {
+  width: 200px; /* Augmenté pour la visibilité */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px; /* Bords légèrement arrondis pour l'esthétique */
+  /* Animation légère pour un effet moderne */
+  transition: transform 0.3s ease-in-out; 
+}
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  background: var(--bg-secondary);
+  margin: 25px 0;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: left;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode section {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color-primary);
+}
+
+.presentation p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.highlight {
+  color: #ff6a1c;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+}
+
+.devices {
+  color: #63d4f5; /* Couleur claire pour le contraste */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+  display: block;
+}
+
+button:not(#themeToggle) {
+  background: linear-gradient(90deg, #ff8a00, #ff5722);
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 20px auto; /* Centrage */
+  display: block;
+  width: 80%;
+  max-width: 350px;
+}
+
+button:not(#themeToggle):hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255,87,34,0.6);
+}
+
+/* Styles spécifiques pour les boutons des catégories (telBtn, pcBtn) */
+#content-wrapper .buttons button {
+    margin: 15px auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+ul li {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Styles pour le contenu dynamique des réparations (prix et boutons) */
+.detail-tag {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-color-secondary);
+    margin: 3px 0;
+}
+
+.price-tag {
+    color: #63d4f5; 
+    font-weight: bold;
+    display: block; 
+    margin: 5px 0 10px 0;
+    font-size: 1.1rem;
+}
+.contact-btns {
+    margin-top: 10px;
+    text-align: right;
+}
+.contact-btns a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px; /* Utilisation de margin-left pour l'espacement */
+    transition: opacity 0.2s;
+}
+
+.contact-btns .call-btn {
+    background: #ff6a1c; /* Orange */
+    cursor: pointer;
+}
+
+.contact-btns .whatsapp-btn {
+    background: #25D366; /* WhatsApp Green */
+}
+.contact-btns a:hover {
+    opacity: 0.9;
+}
+
+/* STYLES POUR LA CARTE */
+.location-section {
+    background: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: none;
+    text-align: center;
+}
+.map-link {
+    display: block;
+    width: 100%;
+    max-width: 450px; /* Taille maximale pour mobile */
+    margin: 15px auto 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+body.dark-mode .map-link {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.map-link:hover {
+    transform: translateY(-2px);
+}
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+footer {
+  background: var(--footer-bg);
+  color: #fff;
+  padding: 20px 10px;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+/* Style du lien de la politique de confidentialité */
+.privacy-link {
+    color: #2d1a58;
+    text-decoration: underline;
+    font-weight: 500;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+body.dark-mode .privacy-link {
+    color: #63d4f5;
+}
+
+/* Style des liens de retour (nouvelle demande) */
+.back-link {
+    color: #ff6a1c !important; /* Orange du site */
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: color 0.2s;
+    font-size: 1.05rem;
+}
+
+.back-link:hover {
+    text-decoration: underline !important;
+}
+
+#privacy {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
