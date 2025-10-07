@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Board Revive est spécialisé dans la réparation de smartphones, d’ordinateurs et de consoles. Nous redonnons vie à vos appareils électroniques grâce à un service rapide, fiable et garanti.">
+  <title>Board Revive</title>
+  <!-- Lien vers le fichier de style -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button id="themeToggle" aria-label="Basculer le mode sombre/clair">
+        <!-- Icône de lune/soleil sera gérée par le CSS/JS -->
+    </button>
+    <div class="logo">
+      <!-- Logo image simple (corrigé pour utiliser 1000080418.jpg) -->
+      <img src="1000080418.jpg" alt="Logo Board Revive" class="logo-img">
+    </div>
+    <p>Réparation rapide et fiable</p>
+  </header>
+
+  <main id="content-wrapper">
+    <!-- Contenu initial (sera modifié par le script) -->
+    <section class="presentation">
+      <h2><strong>NOUS DONNONS</strong></h2>
+      <h2 class="highlight">UNE SECONDE VIE</h2>
+      <h2>À VOS APPAREILS.</h2>
+      <p class="devices">iPhone, Tablette, PC portable...</p>
+      <p>Atelier de réparation pour produits Apple : iPhone, iPad, MacBook. Nous sommes spécialisés dans la micro-soudure et l'électronique. Nous réparons vos appareils jugés irréparables par le constructeur ou d'autres professionnels ! Nous intervenons également sur les autres marques : Samsung, Huawei, Xiaomi, Sony, Asus, Honor...</p>
+    </section>
+
+    <button id="startBtn">Commencer</button>
+
+    <section class="why-us">
+      <h2 class="highlight">POURQUOI NOUS CHOISIR ?</h2>
+      <p>Contrairement aux autres, nous nous efforçons de réparer la pièce, plutôt que de la changer !</p>
+      <p>Étant des passionnés depuis toujours, nous privilégions la réparation au changement systématique du matériel.</p>
+    </section>
+
+    <section class="confidentiality">
+      <a href="#privacy" class="privacy-link">Politique de confidentialité</a>
+    </section>
+
+    <section id="privacy" class="hidden">
+      <!-- Contenu de la Politique de Confidentialité -->
+      <h2>Politique de Confidentialité</h2>
+      <p>Chez <strong>Board Revive</strong>, nous respectons votre vie privée. Les données que vous partagez sont uniquement utilisées pour assurer le bon traitement de votre demande. Aucune donnée personnelle n’est vendue ou partagée à des tiers.</p>
+      <p>Vous pouvez demander la suppression de vos données à tout moment via : 
+        <a href="mailto:boardrevivemaster@gmail.com">boardrevivemaster@gmail.com</a>
+      </p>
+    </section>
+    
+    <!-- SECTION DE LOCALISATION -->
+    <section class="location-section">
+      <h2 style="font-size: 1.25rem; color: var(--text-color-primary); text-align: center;">Notre position</h2>
+      <a href="https://maps.app.goo.gl/vYjzUMtJjj5AfQik7" target="_blank" class="map-link">
+        <img 
+          src="https://placehold.co/600x300/63d4f5/2d1a58?text=Cliquez+pour+voir+la+carte" 
+          alt="Lien vers notre position sur Google Maps" 
+          class="map-image"
+          onerror="this.onerror=null; this.src='https://placehold.co/600x300/63d4f5/2d1a58?text=Cliquez+pour+voir+la+carte';"
+        >
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p>📞 76 722 85 12 (WhatsApp & Appel)</p>
+      <p>📧 boardrevivemaster@gmail.com</p>
+    </div>
+  </footer>
+
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
