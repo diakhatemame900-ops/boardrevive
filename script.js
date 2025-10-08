@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <ul>
                 <li>
                   <strong>Remplacement écran Iphone - Android</strong>
-                  <span class="detail-tag">Selon modèle</span>
+                  <span class="detail-tag">Selon le modèle</span>
                   <span class='price-tag'>10 000 – 90 000 FCFA</span>
                   ${contactButtons()}
                 </li>
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <ul>
                 <li>
                   <strong>Remplacement écran (PC / MacBook)</strong>
-                  <span class="detail-tag">Selon modèle</span>
+                  <span class="detail-tag">Selon le modèle</span>
                   <span class='price-tag'>30 000 – 120 000 FCFA</span>
                   ${contactButtons()}
                 </li>
